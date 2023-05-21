@@ -1,4 +1,5 @@
 import wobbuffet from "../src/assets/foto-01.gif"
+import "./styles.css"
 
 function App() {
   return (
@@ -14,7 +15,23 @@ function App() {
 
             <div className="wrap-input">
               <input type="email" />
+              <span className="focus-input" data-placeholder="Email"></span>
             </div>
+
+            <div className="wrap-input">
+              <input type="password" />
+              <span className="focus-input" data-placeholder="Password"></span>
+            </div>
+
+            <div className="container-login-form-btn">
+              <button className="login-form-btn">Login</button>
+            </div>
+
+            <div className="text-center">
+              <span className="txt1">Não possui conta?</span>
+              <a className="txt2" href="#"> Criar conta.</a>
+            </div>
+
           </form>
         </div>
       </div>
