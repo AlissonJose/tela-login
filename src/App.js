@@ -1,4 +1,4 @@
-import wobbuffet from "../public/assets/foto-01.gif";
+import wobbuffet from "../src/assets/foto-01.gif"
 
 function App() {
   return (
