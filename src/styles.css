@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +7,16 @@
 
 }
 
+
 .container {
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
 }
 
 .container-login {
-
+    height: 100vh;
     width: 100%;
     min-height: 100vl;
     display: flex;
@@ -101,7 +106,13 @@
     background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
     background: linear-gradient(to left, #21d4fd, #b721ff);
 }
-
+.wrap-input input{
+    background: none;
+    border: none;
+    outline: none;
+    offset: none;
+    color: #ffff;
+}
 .focus-input::after {
     font-size: 15px;
     color: #9999;
