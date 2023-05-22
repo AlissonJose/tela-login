@@ -1,7 +1,11 @@
+import { useState } from "react"
 import wobbuffet from "../src/assets/foto-01.gif"
 import "./styles.css"
 
 function App() {
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   return (
     <div className="container">
       <div className="container-login">
@@ -14,12 +18,23 @@ function App() {
             </span>
 
             <div className="wrap-input">
-              <input className="input" type="email" />
+              <input 
+              className={email !== "" ? 'has-val inpu' : 'input'}
+              // Aqui utilizado hífen ternário para condição do input ao inserir ou não informações no campo !== " " verdadeiro
+              type="email" 
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              />
               <span className="focus-input" data-placeholder="Email"></span>
             </div>
 
             <div className="wrap-input">
-              <input className="input" type="password" />
+              <input 
+              className={password !== "" ? 'has-val inpu' : 'input'} 
+              type="password" 
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              />
               <span className="focus-input" data-placeholder="Password"></span>
             </div>
 
